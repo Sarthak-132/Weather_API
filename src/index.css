@@ -1,13 +1,93 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app{
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  color: beige;
 }
+
+.overlay{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(27, 22, 22, 0.3);
+}
+
+.container{
+  max-width: 800px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.section{
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  color: white;
+}
+
+.section_inputs, .section_temperature{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(27, 22, 22, 0.7);
+}
+
+.section_inputs>input {
+  border: 0.8px solid white;
+  border-radius: 0.4rem;
+  background-color: transparent;
+  color: white;
+  padding: 0.5rem;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.section_inputs>input:focus{
+  outline: none;
+}
+
+.section_inputs>button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 00.4rem;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: rgb(254, 144, 144);
+}
+
+.section_inputs>button:hover{
+  cursor: pointer;
+  background-color: lightslategrey;
+}
+
+.icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.icon>h3{
+  font-size: 15px;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+.temprature>h1{
+  font-size: 60px;
+   
+}
+
